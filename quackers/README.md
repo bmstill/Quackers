@@ -1,8 +1,10 @@
 # CU to CZ: From Zero to Quero
 
-**QuEra Creator’s Challenge — iQuHACK 2026**
-**Team Quackers:** Kai Tucker, Nadia Chestnut, Julia Holzbach, Bryson Still
-[Challenge Description](https://github.com/iQuHACK/2026-QuEra-Creator/tree/main)
+**QuEra Creator’s Challenge — iQuHACK 2026**  
+
+**Team Quackers:** Kai Tucker, Nadia Chestnut, Julia Holzbach, Bryson Still  
+
+[Challenge Description](https://github.com/iQuHACK/2026-QuEra-Creator/tree/main)  
 
 ---
 
