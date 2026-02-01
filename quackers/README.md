@@ -31,14 +31,12 @@ The repository is organized to separate **physics simulation**, **animation logi
 ├── ket10.py                       # Animation logic for |01⟩ / |10⟩ phase evolution
 ├── ket11.py                       # Animation logic for |11⟩ phase evolution under blockade
 ├── README.md                      # Project overview and reproduction instructions
-├── documentation/
-│   └── CU_to_CZ_From_Zero_to_Quero.pdf   # Full technical write-up / judging guide
-├── presentation/
-│   └── CU_to_CZ_Presentation.pdf         # iQuHACK presentation slides
-├── assets/
-│   ├── single_qubit_phase.gif
-│   ├── energy_level_dynamics.gif
-│   └── bloch_sphere_cz.gif
+├── CU_to_CZ_From_Zero_to_Quero.pdf   # Full technical write-up / judging guide
+├── CU_to_CZ_Presentation.pdf         # iQuHACK presentation slides
+├── Single Qubit Phase.mov
+├── Multi Quibit Evolution.mov
+│── Ket 10mp4.mp4
+│── Ket 11mp4.mp4
 ```
 
 ## Model (hardware-faithful, simplified)
