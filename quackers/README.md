@@ -8,7 +8,7 @@
 
 [Documentation](https://github.com/bmstill/Quackers/blob/main/quackers/Quackers___IQuHACK_QuEra_Creator_s_Challenge__CU_to_CZ.pdf)  
 
-[Presentation](https://github.com/iQuHACK/2026-QuEra-Creator/tree/main](https://github.com/bmstill/Quackers/blob/main/quackers/quackers%20presentation.pdf )  
+[Presentation](https://github.com/bmstill/Quackers/blob/main/quackers/quackers%20presentation.pdf) 
 
 
 
