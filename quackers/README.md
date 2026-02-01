@@ -39,4 +39,43 @@ The repository is organized to separate **physics simulation**, **animation logi
 │   ├── single_qubit_phase.gif
 │   ├── energy_level_dynamics.gif
 │   └── bloch_sphere_cz.gif
-└── pyproject.toml / requirements.txt     # Dependency specification
+```
+
+## Model (hardware-faithful, simplified)
+
+We evolve the quantum states using a simplified two-atom Hamiltonian that captures the essential physics of a neutral-atom controlled-Z (CZ) gate mediated by Rydberg blockade:
+
+\[
+H(t) = \sum_{i=1}^{2}\left[\frac{\Omega(t)}{2}\left(|r⟩⟨1|_i + |1⟩⟨r|_i\right) - \Delta(t)|r⟩⟨r|_i\right] + V |rr⟩⟨rr|
+\]
+
+where:
+
+- \(\Omega(t)\) is the effective Raman Rabi frequency coupling the \(|1⟩\) ground state to the Rydberg state \(|r⟩\)
+- \(\Delta(t)\) is the laser detuning
+- \(V\) is the Rydberg–Rydberg interaction energy responsible for blockade
+
+This Hamiltonian naturally separates the dynamics into distinct subspaces:
+
+- States \(|01⟩\) and \(|10⟩\) evolve as effectively single-atom driven systems and acquire **single-qubit Z phases**
+- The \(|11⟩\) state experiences an interaction-shifted energy landscape, leading to **additional conditional phase accumulation**
+
+All computational basis states return to themselves in population at the end of the pulse, but with different accumulated phases. The relative \(-\pi\) phase on \(|11⟩\) constitutes the entangling resource of the CZ gate, defined up to local Z rotations.
+
+---
+
+## Reproducibility
+
+All simulations and animations in this project are generated programmatically. The following steps reproduce the full pipeline from numerical evolution to rendered animations.
+
+### 1. Environment setup
+
+**Python 3.10+ recommended**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate    # macOS/Linux
+# .venv\Scripts\activate     # Windows PowerShell
+python -m pip install --upgrade pip
+```
+
