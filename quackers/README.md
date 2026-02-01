@@ -1,4 +1,4 @@
-# CU to CZ: From Zero to Quero
+# CU CZ: From Zero to Quero
 
 **QuEra Creator’s Challenge — iQuHACK 2026**  
 
