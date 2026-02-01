@@ -6,7 +6,10 @@
 
 [Challenge Description](https://github.com/iQuHACK/2026-QuEra-Creator/tree/main)  
 
-[Documentation](linkhere)  
+[Documentation]([linkhere](https://github.com/bmstill/Quackers/blob/main/quackers/Quackers___IQuHACK_QuEra_Creator_s_Challenge__CU_to_CZ.pdf))  
+
+[Presentation]([https://github.com/iQuHACK/2026-QuEra-Creator/tree/main](https://github.com/bmstill/Quackers/blob/main/quackers/quackers%20presentation.pdf))  
+
 
 
 ---
@@ -36,7 +39,7 @@ The repository is organized to separate **physics simulation**, **animation logi
 ├── ket10.py                       # Animation logic for |01⟩ / |10⟩ phase evolution
 ├── ket11.py                       # Animation logic for |11⟩ phase evolution under blockade
 ├── README.md                      # Project overview and reproduction instructions
-├── CU_to_CZ.pdf   # Full technical write-up / judging guide
+├── Quackers___IQuHACK_QuEra_Creator_s_Challenge__CU_to_CZ.pdf   # Full technical write-up / judging guide
 ├── quackers presentation.pdf         # iQuHACK presentation slides
 ├── Single Qubit Phase.mov
 ├── Multi Quibit Evolution.mov
