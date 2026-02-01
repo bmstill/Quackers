@@ -78,4 +78,58 @@ source .venv/bin/activate    # macOS/Linux
 # .venv\Scripts\activate     # Windows PowerShell
 python -m pip install --upgrade pip
 ```
+## Install dependencies
+
+Python 3.10 or newer is recommended.
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate    # macOS/Linux
+# .venv\Scripts\activate     # Windows PowerShell
+python -m pip install --upgrade pip
+```
+Install required packages
+```bash
+pip install -r requirements.txt
+```
+Otherwise, install the minimum required dependencies:
+```bash
+pip install numpy scipy qutip manim
+```
+Run the quantum state evolution
+```bash
+Compute the time evolution of the quantum states using QuTiP:
+
+python SingleQubitEvolution.py
+python MultiQubitEvolution.py
+```
+
+These scripts numerically solve the time-dependent Schrödinger equation and generate the state trajectories used by the animation scripts.
+
+Render the animations
+
+Generate the Bloch-sphere and energy-level animations using Manim:
+```bash
+manim -pqh ket10.py
+manim -pqh ket11.py
+```
+## Future directions
+
+Potential extensions of this work include:
+
+- Incorporating fully time-dependent control profiles for the Rabi frequency \(\Omega(t)\) and detuning \(\Delta(t)\), enabling smoother and more experimentally realistic pulse shapes.
+- Driving the visualizations directly from live Hamiltonian inputs so that phase evolution updates in real time as control parameters are varied.
+- Reproducing the animations in an interactive 3D environment (e.g. Blender), allowing users to explore trajectories, energy levels, and phase accumulation from arbitrary viewpoints.
+- Extending the framework beyond two-qubit CZ gates to visualize W states and multi-controlled phase gates such as CCZ and \(C_kZ\), demonstrating how conditional phase accumulation scales to larger circuits.
+
+---
+
+## Attribution
+
+Developed for the **QuEra Creator’s Challenge** at **iQuHACK 2026**.
+
+If you reuse or adapt this work, please attribute **Team Quackers** and link back to this repository.
+
 
